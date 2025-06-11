@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HerbalLink</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #d0f0c0, #a8e6cf, #dcedc1);
+      background-size: 400% 400%;
+      animation: backgroundMove 15s ease infinite;
+      padding: 20px;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease;
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3.5em;
+      color: #2e7d32;
+      font-weight: 700; /* bold */
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.3em;
+      color: #3e4e42;
+      margin-bottom: 0;
+    }
+
+    .explore-btn {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.2em;
+      font-weight: 700;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(46, 125, 50, 0.4);
+      max-width: 400px;
+      width: 100%;
+      animation: fadeIn 2.5s ease;
+    }
+
+    .explore-btn:hover {
+      background-color: #1b4d20;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HerbalLink</h1>
+    <p>Your smart herbal health guide.</p>
+  </div>
+
+  <button class="explore-btn">Explore</button>
+</body>
+</html>
