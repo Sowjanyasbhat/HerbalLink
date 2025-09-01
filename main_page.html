@@ -53,7 +53,7 @@
     h1 {
       font-size: 3.5em;
       color: #2e7d32;
-      font-weight: 700; /* bold */
+      font-weight: 700;
       margin-bottom: 15px;
     }
 
@@ -77,6 +77,8 @@
       max-width: 400px;
       width: 100%;
       animation: fadeIn 2.5s ease;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .explore-btn:hover {
@@ -90,6 +92,7 @@
     <p>Your smart herbal health guide.</p>
   </div>
 
-  <button class="explore-btn">Explore</button>
+  <!-- Explore button linking to Flask /register route -->
+  <a href="http://127.0.0.1:5000/register" class="explore-btn">Explore</a>
 </body>
 </html>
